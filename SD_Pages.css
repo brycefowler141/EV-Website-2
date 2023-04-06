@@ -1,0 +1,146 @@
+body 
+{
+  font-family: Verdana, sans-serif;
+  background-color: white;
+  background-image: url("background2.jpg");
+  background-repeat:no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.mainBody
+{
+    border-width: 3px;
+    border-style: solid;
+    border-color: #b80000; 
+    text-align: center; 
+    width: 70%; 
+    margin-left: 15%;
+    background-color: #808080;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.logoImage
+{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+  height: auto;
+}
+
+nav ul
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: inline-block;
+}
+
+nav li
+{
+  float: left;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+hr
+{
+    border-width: 3px;
+    border-style: solid;
+    border-color: #b80000;
+}
+
+.person h2
+{
+  color: #b80000;
+}
+
+.person h3
+{
+  color: white;
+}
+
+.person h4
+{
+  color: white;
+}
+
+.personImg
+{
+  opacity: 1;
+  display: block;
+  width: 300px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  border: 5px solid #b80000;
+}
+
+.pageText
+{
+  padding-left: 50px;
+  padding-right: 50px;
+  color:white;
+}
+
+.pageImage
+{
+  opacity: 1;
+  display: block;
+  width: auto;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  border: 5px solid #b80000;
+}
+
+.motorMountImage
+{
+  opacity: 1;
+  display: block;
+  width: 700px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.heatExchangerImage
+{
+  opacity: 1;
+  display: block;
+  width: 500px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  border: 5px solid #b80000;
+}
+
+.inverterImage
+{
+  opacity: 1;
+  display: block;
+  width: 500px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 70px;
+}
+
+.resolverImage
+{
+  opacity: 1;
+  display: block;
+  width: 550px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  border: 5px solid #b80000;
+}
+
+.caption
+{
+  color: white;
+}

@@ -1,0 +1,68 @@
+<!--Version 1.0-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link href = "SD_Pages.css" rel = "stylesheet">
+        <title>EV Senior Design</title>
+    </head>
+
+    <body>
+        <div class = "mainBody">
+            <header>
+                <div class = "logoHeader">
+                    <a href = "index.html"><img src = "EVlogoRedGrayT.png" alt = "EV Team Logo" class = "logoImage"></a>
+                </div>
+            </header>
+
+            <nav>
+                <hr>
+                <div class="navBar">
+                    <ul>
+                        <li><a href = "index.html"><img src = "Home.png" alt = "Home Page" class = "navImg"></a></li>
+                        <li><a href = "SD_Inverter.html"><img src = "Inverter.png" alt = "Inverter Page" class = "navImg"></a></li>
+                        <li><a href = "SD_HeatExchange.html"><img src = "HeatExchanger.png" alt = "Heat Exchanger Page" class = "navImg"></a></li>
+                        <li><a href = "SD_Resolver.html"><img src = "Resolver.png" alt = "Resolver Page" class = "navImg"></a></li>
+                        <li><a href = "SD_MotorMount.html"><img src = "MotorMount.png" alt = "Motor Mount Page" class = "navImg"></a></li>
+                        <li><a href = "SD_OurTeam.html"><img src = "OurTeam.png" alt = "Our Team Page" class = "navImg"></a></li>
+                    </ul>
+                </div>
+                <hr>
+            </nav>
+            <article>
+                <br>
+                <img src = "InverterLarge.png" alt = "Inverter" class = ""><br><br>
+                <img src = "InverterImg.png" alt = "Inverter" class = "inverterImage">
+                <h5 class = "caption">Circuit Layout of the Inverter</h5><br>
+
+                <p class = "pageText">
+                    The traction inverter is a critical component of this design. It converts DC power from the vehicle’s 
+                    onboard batteries into AC power that can be used to drive the main motor. For this application, 
+                    it must generate a 3-phase PWM signal that can be sent to the motor. It also must be able to interpret 
+                    the motor’s resolver in order to provide the required power at specific times. The ability to tolerate high 
+                    voltages and currents is necessary for this system to function. Silicon Carbide MOFSETs were chosen rather than 
+                    IGBTs for this design due to their greater thermal conductivity, minimal switching loss, lower heat generation, and 
+                    more compact design. This design can also be scaled up for future projects as necessary. 
+                </p>
+
+                <img src = "InverterMosfetCircuit.png" alt = "Inverter MOSFET Circuit" class = "pageImage">
+                <h5 class = "caption">Simulation of the MOSFET Driver Circuit</h5><br>
+
+                <p class = "pageText">
+                    Our inverter design will use several voltage levels. The High Voltage will be created with four 12V lead acid batteries 
+                    generating a nominal 48V which is used for the high-current drive of the motor windings.  
+                    This voltage will range from 40VDC when discharged to 57.6VDC while charging so we’ll accommodate for that in 
+                    our component selection. In order to quickly activate the MOSFETs, we’ll use a separate 12V lead acid battery 
+                    to power the MOSFET gate drivers and activate the MOSFET gates. It will also provide the 3.3V and 5V Power 
+                    Supply to power our Microcontrollers and our throttle circuit by stepping down the voltage and limiting current 
+                    with buck converters.
+                </p>
+
+            </article>
+        
+
+        </div>
+    </body>
+
+</html>
